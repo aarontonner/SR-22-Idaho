@@ -70,14 +70,12 @@ eleventyNavigation:
               decoding="async"
             />
           </picture>
-          <span class="blog-author">{{ location.data.author }}</span>
           <span aria-hidden="true" class="blog-dot"></span>
           <!--Blog Date-->
           {#
           <span class="blog-date">{{ location.date | locationDate }}</span> #}
         </div>
-        <h2 class="blog-h1">{{ location.data.title }}</h2>
-        <p class="blog-desc">{{ location.data.description }}</p>
+        <h2 class="blog-h1">{{ location.data.location }}</h2>
         <a href="{{ location.url }}" class="blog-link">Continue Reading</a>
       </div>
     </article>
